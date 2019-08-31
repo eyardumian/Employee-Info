@@ -14,6 +14,12 @@ namespace Employee_App
         private string _department;
         private string _position;
 
-        
+        public Employee(string Name, int IdNumber, string Department, string Position)
+        {
+            _name = Name;
+            _idNumber = IdNumber;
+            _department = Department;
+            _position = Position;
+        }
     }
 }
