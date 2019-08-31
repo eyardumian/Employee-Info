@@ -29,11 +29,18 @@ namespace Employee_App
             JoyRogers.IdNumber = 81774;
             JoyRogers.Department = "Manufacturing";
             JoyRogers.Position = "Engineer";
+
+            dataGridView1.Rows[0].Cells[0].Value = SusanMeyers.Name;
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            
         }
     }
 }
