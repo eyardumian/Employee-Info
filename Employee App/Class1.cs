@@ -29,5 +29,13 @@ namespace Employee_App
             _department = "";
             _position = "";
         }
+
+        public Employee()
+        {
+            _name = "";
+            _idNumber = 0;
+            _department = "";
+            _position = "";
+        }
     }
 }
