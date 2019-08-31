@@ -9,25 +9,22 @@ namespace Employee_App
     class Employee
     {
         //Field
-        private string _firstName;
-        private string _lastName;
+        private string _name;
         private int _idNumber;
         private string _department;
         private string _position;
 
-        public Employee(string FirstName, string LastName, int IdNumber, string Department, string Position)
+        public Employee(string Name, int IdNumber, string Department, string Position)
         {
-            _firstName = FirstName;
-            _lastName = LastName;
+            _name = Name;
             _idNumber = IdNumber;
             _department = Department;
             _position = Position;
         }
 
-        public Employee(string FirstName, string LastName, int IdNumber)
+        public Employee(string Name, int IdNumber)
         {
-            _firstname = FirstName;
-            _lastName = LastName;
+            _name = Name;
             _idNumber = IdNumber;
             _department = "";
             _position = "";
@@ -35,12 +32,15 @@ namespace Employee_App
 
         public Employee()
         {
-            _firstName = "";
-            _lastName = "";
+            _name = "";
             _idNumber = 0;
             _department = "";
             _position = "";
         }
 
+        public string Name { set; get; }
+        public int IdNumber { set; get; }
+        public string Department { set; get; }
+        public string Position { set; get; }
     }
 }

@@ -19,11 +19,21 @@ namespace Employee_App
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Employee SusanMeyers = new Employee(Susan, Meyers, 47899, Accounting, Vice President);
-            Employee MarkJones = new Employee(Mark, Jones, 39119, IT, Programmer);
-            Employee JoyRogers = new Employee(Joy, Rogers, 81774, Manufacturing, Engineer);
 
-            
+            Employee SusanMeyers = new Employee("Susan Meyers", 47899, "Accounting", "Vice_President");
+            Employee MarkJones = new Employee("Mark Jones", 39119);
+            MarkJones.Department = "IT";
+            MarkJones.Position = "Programmer";
+            Employee JoyRogers = new Employee();
+            JoyRogers.Name = "Joy Rogers";
+            JoyRogers.IdNumber = 81774;
+            JoyRogers.Department = "Manufacturing";
+            JoyRogers.Position = "Engineer";
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
