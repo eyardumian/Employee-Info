@@ -8,12 +8,13 @@ namespace Employee_App
 {
     class Employee
     {
-        //Field
+        //Fields
         private string _name;
         private int _idNumber;
         private string _department;
         private string _position;
 
+        //Constructor with all 4 parameters
         public Employee(string Name, int IdNumber, string Department, string Position)
         {
             _name = Name;
@@ -21,7 +22,7 @@ namespace Employee_App
             _department = Department;
             _position = Position;
         }
-
+        //Constructor with 2 parameters
         public Employee(string Name, int IdNumber)
         {
             _name = Name;
@@ -29,7 +30,7 @@ namespace Employee_App
             _department = "";
             _position = "";
         }
-
+        //Parameterless constructor
         public Employee()
         {
             _name = "";
@@ -37,10 +38,50 @@ namespace Employee_App
             _department = "";
             _position = "";
         }
-
-        public string Name { set; get; }
-        public int IdNumber { set; get; }
-        public string Department { set; get; }
-        public string Position { set; get; }
+        //Properties
+        public string Name
+        {
+            set
+            {
+                _name = value;
+            }
+            get
+            {
+                return _name;
+            }
+        }
+        public int IdNumber
+        {
+            set
+            {
+                _idNumber = value;
+            }
+            get
+            {
+                return _idNumber;
+            }
+        }
+        public string Department
+        {
+            set
+            {
+                _department = value;
+            }
+            get
+            {
+                return _department;
+            }
+        }
+        public string Position
+        {
+            set
+            {
+                _position = value;
+            }
+            get
+            {
+                return _position;
+            }
+        }
     }
 }
